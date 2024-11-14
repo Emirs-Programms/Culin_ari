@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы</title>
+    <link rel="stylesheet" href="Отзывы.css">
+</head>
+<body>
+
+    <!-- Основной контейнер с заголовком и кнопкой перехода на главную -->
+    <header class="container header">
+        <h1>Отзывы наших клиентов</h1>
+        <div class="header-btns">
+            <button><a href="./index.html">Главное</a></button>
+        </div>
+    </header>
+
+    <!-- Секция с отзывами -->
+    <section class="one">
+        <button id="addReviewButton">Добавить отзыв</button>
+        
+        <div id="reviews-section">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Модальное окно для добавления отзыва -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>Добавить новый отзыв</h2>
+            <input type="text" id="userName" placeholder="Ваше имя">
+            <textarea id="userReview" placeholder="Ваш отзыв"></textarea>
+            <button id="submitReview">Отправить</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

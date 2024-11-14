@@ -1,0 +1,67 @@
+.instagram-media {
+    background: #fff;
+    border: 2px solid #e6e6e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 540px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .instagram-media a {
+    color: #3897f0;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+  }
+  
+  .instagram-media .profile-icon {
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+  }
+  
+  .instagram-media .text-placeholder {
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    height: 14px;
+    margin-bottom: 6px;
+  }
+  
+  .instagram-media .cta {
+    color: #3897f0;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .instagram-media .footer {
+    color: #c9c8cd;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 8px;
+  }
+  
+  .instagram-media svg {
+    display: block;
+    height: 50px;
+    margin: 0 auto;
+    width: 50px;
+  }
+  
+  .instagram-media .content {
+    padding: 10px;
+  }
+  
+  .instagram-media .button {
+    background-color: #3897f0;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  

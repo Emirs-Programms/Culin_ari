@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню</title>
+    <link rel="stylesheet" href="/style.css">
+
+    
+    <!-- Подключение шрифта Playwrite GB S -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Playwrite+GB+S:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Pacifico&family=Playwrite+GB+S:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container header">
+        <h1>Culin_ari</h1>
+        <div class="header-btns">
+            <button><a href="/index.html"><h2>Главное</h2></a></button>
+            <button><a href="/Отзывы.html"><h2>Отзывы</h2></a></button>
+        </div>
+    </div>
+
+    <div class="container one">
+        <div class="container header">
+            <button><a href="#Круассаны"><h2>Круассаны</h2></a></button>
+            <button><a href="#Синабон"><h2>Синабоны</h2></a></button>
+            <button><a href="#Слойки"><h2>Слойки</h2></a></button>
+        </div>
+    <div  class="container one">
+        <div class="background-section">
+            <h1 id="#Круассаны">Круассан</h1>
+            <h3>Одно из самых вкусных изделий <br>
+                Текст...... <br> 
+                Текст.........</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpi43BCm2QISIF9ju69eLsYwsqPgVjyxPP2A&s" width="500px" height="500px" alt=""><!--путь к фото-->
+        </div>
+        <div class="progress-bar" id="scroll-progress"></div>
+        
+       </div>
+         <div id="Синабон" class="container one" >
+            <h1 >Синабоны</h1>
+                <h3>Одно из самых вкусных изделий <br>
+                    Текст...... <br> 
+                    Текст.........</h3>
+                <img src="https://avatars.mds.yandex.net/get-altay/11732311/2a0000018e16b0fd81f95a449ce8ee2385f8/orig" alt="Синабоны">
+                
+            </div>
+            
+            <div id="Слойки" class="container one" >
+                <h1 >Слойки</h1> 
+                    <h3>Одно из самых вкусных изделий <br>
+                        Текст...... <br> 
+                        Текст.........</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjgiVwa975FNBo1lvpSc-70GTqP1Sp9OxknUOX8rtTad1krdihGqJh7gZRWDsKt2TF9-c&usqp=CAU" alt="Слойки">
+                
+    </div>
+
+</body>
+<script>
+
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        const hash = window.location.hash;
+        if (hash) {
+            const element = document.querySelector(hash);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    });
+
+    // Отслеживаем прокрутку страницы
+window.addEventListener('scroll', () => {
+    const progressBar = document.getElementById('scroll-progress');
+    const scrolledFraction = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+    progressBar.style.transform = `scaleX(${scrolledFraction})`;
+});
+
+    </script>
+        
+</html>
